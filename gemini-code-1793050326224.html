@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermaxi - Canasta Familiar a Domicilio</title>
+  <style>
+    :root {
+      --supermaxi-red: #D20000;
+      --supermaxi-dark: #1F1F1F;
+      --supermaxi-light: #F8F9FA;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: var(--supermaxi-light);
+      color: var(--supermaxi-dark);
+    }
+
+    header {
+      background-color: var(--supermaxi-red);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .product-detail {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .price-tag {
+      font-size: 2.5rem;
+      color: var(--supermaxi-red);
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .faq {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .order-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      background-color: var(--supermaxi-red);
+      color: white;
+      padding: 0.9rem 2rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    .btn:hover {
+      background-color: #a60000;
+    }
+
+    footer {
+      background-color: var(--supermaxi-dark);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SUPERMAXI</h1>
+  </header>
+
+  <section class="hero">
+    <h1>Canasta Familiar Básica Domicilio</h1>
+    <p>Recibe los víveres esenciales de tu hogar directamente en tu puerta.</p>
+  </section>
+
+  <div class="container">
+    
+    <!-- DETALLE DEL PRODUCTO Y PRECIO -->
+    <div class="product-detail">
+      <h2>Producto Promocionado: Canasta Familiar Básica</h2>
+      <p>Incluye: Aceite, arroz, azúcar, granos, lácteos, carnes seleccionadas y verduras frescas de calidad Supermaxi.</p>
+      <div class="price-tag">$35.00 USD</div>
+      <p><em>Precio único promocional con envío incluido.</em></p>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <h2 style="text-align:center; margin-bottom:1rem;">Beneficios del Producto</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>🛒 Calidad Garantizada</h3>
+        <p>Selección rigurosa de productos frescos y de primera categoría.</p>
+      </div>
+      <div class="card">
+        <h3>🚚 Envío a Domicilio</h3>
+        <p>Entrega programada el mismo día en la puerta de tu hogar.</p>
+      </div>
+      <div class="card">
+        <h3>💳 Ahorro Directo</h3>
+        <p>Ahorras un 15% en comparación con la compra de productos individuales.</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 style="text-align:center; margin-bottom:1rem;">Preguntas Frecuentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <strong>¿Qué métodos de pago aceptan?</strong>
+        <p>Aceptamos tarjetas de crédito, débito y transferencia bancaria.</p>
+      </div>
+      <hr><br>
+      <div class="faq-item">
+        <strong>¿En cuánto tiempo entregan el pedido?</strong>
+        <p>Las entregas se realizan en un lapso estimado de 2 a 4 horas tras la confirmación.</p>
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <h2 style="text-align:center; margin-bottom:1rem;">Formulario de Pedido</h2>
+    <div class="order-form">
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana López">
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required placeholder="ana@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono de Contacto:</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="0991234567">
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección de Entrega:</label>
+          <textarea id="direccion" name="direccion" rows="3" required placeholder="Calle principal, secundaria y número de casa"></textarea>
+        </div>
+        <button type="submit" class="btn">Solicitar Canasta por $35.00</button>
+      </form>
+      <p id="statusMsg" style="text-align:center; margin-top:1rem; display:none; font-weight:bold;"></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Supermaxi Ecuador - Ejercicio de Landing Page Académico.</p>
+  </footer>
+
+  <script>
+    // URL de tu App Script de Google Sheets
+    const SCRIPT_URL = "https://script.google.com/macros/s/TU_SCRIPT_ID_AQUI/exec";
+
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const statusMsg = document.getElementById('statusMsg');
+      statusMsg.style.color = "black";
+      statusMsg.innerText = "Enviando pedido...";
+      statusMsg.style.display = "block";
+
+      const formData = new FormData(this);
+
+      fetch(SCRIPT_URL, { method: 'POST', body: formData })
+        .then(response => {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "¡Pedido registrado con éxito en Google Sheets!";
+          document.getElementById('orderForm').reset();
+        })
+        .catch(error => {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Error al conectar con Google Sheets.";
+        });
+    });
+  </script>
+</body>
+</html>
